@@ -9,6 +9,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    display: flex; /* Ativa o Flexbox para o layout de duas colunas */
 }
 
 /* Cabeçalho */
@@ -34,37 +35,29 @@ nav li {
     margin-left: 20px;
 }
 
-/* Seções */
-.hero {
-    background-image: url("hero-image.jpg"); /* Imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
+/* Coluna lateral (Sidebar) */
+.sidebar {
+    width: 250px; /* Largura da coluna lateral */
+    margin-right: 20px; /* Espaçamento entre as colunas */
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+.sidebar h2 {
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.sidebar li {
+    margin-bottom: 5px;
 }
 
+/* Coluna principal (Conteúdo) */
 .content {
-    padding: 50px 0;
+    flex: 1; /* Ocupa o espaço restante */
 }
 
 /* Rodapé */
