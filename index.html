@@ -1,23 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Análise DEA</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoCréditoRural</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Eficiência DEA</h1>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">GeoCréditoRural</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Aulas</a></li>
+                    <li><a href="#">Referências</a></li>
+                    <li><a href="#">Informações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2>Aulas</h2>
-    <ul>
-        <li><a href="aula1.html">Introdução à Linguagem de Consulta SQL</a></li>
-        <li><a href="aula2.html">Ambiente de Computação Interativa</a></li>
-        </ul>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Aulas</h2>
+                <ul>
+                    <li><a href="#">Introdução à Linguagem de Consulta SQL</a></li>
+                    <li><a href="#">Ambiente de Computação Interativa</a></li>
+                    <li><a href="#">Dados do Sicor</a></li>
+                    <li><a href="#">Impedimentos Sociais, Ambientais e Climáticos</a></li>
+                    <li><a href="#">Uso e Cobertura da Terra</a></li>
+                    <li><a href="#">Imagens de Satélites</a></li>
+                    <li><a href="#">Séries Temporais de Imagens de Satélites</a></li>
+                    <li><a href="#">Fenologia</a></li>
+                    <li><a href="#">Padrões em Séries Temporais de Imagens de Satélites</a></li>
+                    <li><a href="#">Análise Integrada</a></li>
+                </ul>
 
-    <h2>Objetivos</h2>
-    <p>Capacitar os alunos no uso de DEA.</p>
+                <h2>Referências Bibliográficas</h2>
+                <ul>
+                    <li><a href="#">Referências Bibliográficas</a></li>
+                </ul>
+
+                <h2>Informações Gerais</h2>
+                <ul>
+                    <li><a href="#">Licença</a></li>
+                    <li><a href="#">Projeto Panoptes</a></li>
+                    <li><a href="#">Apoio Financeiro e Administrativo</a></li>
+                    <li><a href="#">Índice</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h1>Monitoramento de Operações de Crédito Rural por meio de Geotecnologias</h1>
+                <p>
+                    Um dos principais eixos da política agrícola brasileira se dá por meio do crédito agrícola e do seguro agrícola.
+                    No Plano Safra 2023/2024 serão destinados R$ 364,22 bilhões, valor 26,8% superior ao do que foi aplicado no Plano Safra anterior.
+                    Nesse plano safra o crédito rural visa incentivar o fortalecimento dos sistemas de produção ambientalmente sustentáveis.
+                    Isso se dará pela redução das taxas de juros para recuperação de pastagens e premiação para os produtores rurais que adotam práticas agropecuárias consideradas mais sustentáveis [1].
+                    Entretanto, as fraudes no crédito rural têm uma longa história e as ações de fiscalização e monitoramento realizadas pelo Banco Central com base em dados geográficos apresentam baixo grau de automação e limitada cobertura espacial e temporal.
+                    Assim, o Tribunal de Contas da União (TCU), por meio do projeto Panoptes, propôs o curso para o acompanhamento e fiscalização das operações de crédito rural.
+                </p>
+
+                <h2>Objetivos e organização do curso</h2>
+                <p>
+                    O objetivo desse curso é capacitar os alunos no uso de geotecnologias para monitoramento de operações de crédito rural e Proagro.
+                    Para isto serão apresentados exemplos utilizando dados genespaciais, vetoriais (pontos, linhas e polígonos) e matriciais (imagens obtidas por sensores remoto), aplicados ao monitoramento das operações de crédito.
+                    Além de versar sobre a realização de análise de séries temporais com base em cubos temporais de imagens.
+                    Para atender os objetivos do projeto, será fornecida a base necessária em geotecnologias além da implementação e personalização de rotinas automatizadas para monitoramento e avaliação das operações de crédito e do PROAGRO.
+                    Este material não tem a pretensão de suprir todos os conhecimentos necessários para dominar todo o conhecimento jurídico ou tecnológico necessário para efetuar o monitoramento de operações de crédito rural e Proagro mas sim de servir como um material de base para construir o conhecimento necessário para tal finalidade.
+                </p>
+
+                <h2>O curso está dividido nos seguintes capítulos:</h2>
+                <ol>
+                    <li>
+                        <h3>Introdução ao ambiente de computação interativa, ao SQL, Python e Jupyter notebooks.</h3>
+                        <p>
+                            Nesse capítulo será realizada uma capacitação para habilitar e nivelar os alunos no uso destas ferramentas.
+                            Esse capítulo fornecerá base de conhecimento necessária para acompanhar e aplicar os conhecimentos fornecidos pelo curso.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Acesso e análise da qualidade dos dados do Sicor.</h3>
+                        <p>
+                            Neste tema será apresentada a base disponibilizada de dados do Sicor, realizando uma análise de como as tabelas se relacionam, permitindo navegar nessa base de dados.
+                            Assim, será explanado como acessar as glebas do Sicor; de como transformar os dados tabulares referente as glebas em geometrias, de como verificar a sua validade e quais os métodos para repará-las, quando necessário ou possível.
+                            Também irá apresentar quais informações estão disponíveis nesta base de dados, procurando melhorar e facilitar o acesso e usabilidade dos dados do Sicor para as análises que serão realizadas nos próximos temas.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Rotinas de monitoramento dos dados Sicor utilizando bases em dados vetoriais.</h3>
+                        <p>
+                            Neste tópico serão abordadas as bases de dados e rotinas necessárias para desenvolver verificações adicionais que complementam as verificações automáticas atualmente feitas pelo SICOR com foco no cumprimento da Resolução BCB Nº 140 [2] e da Resolução CMN Nº 5.081 (3), sobre impedimentos sociais, ambientais e climáticos para o crédito rural.
+                            O objetivo aqui é melhorar e facilitar o acesso aos dados para as análises que serão feitas, por exemplo, organizando as bases que serão consumidas mais frequentemente.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Análise conjunta entre os tipos de uso e cobertura da terra e os dados do Sicor.</h3>
+                        <p>
+                            (Conteúdo do capítulo 4)
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>Projeto DEA</p>
+        <div class="container">
+            <p>&copy; 2023 GeoCréditoRural</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
